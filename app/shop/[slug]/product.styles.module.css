@@ -1,0 +1,28 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Serif;
+}
+.container .Image{
+    display: flex;
+    justify-content: center;
+}
+.container .Image img{
+    border-radius: 10px;
+}
+.container .desciption{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container .detail{
+    padding-bottom: 20px ;
+    border-bottom: 1px solid black;
+}
+
+.container .priceDetail{
+    display: grid;
+    grid-template-columns: 40%;
+}

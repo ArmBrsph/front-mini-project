@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container .product_img img{
+    border: 1px solid #231C1C ;
+    border-radius: 10px;
+}
+.container .item{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-family: Serif;
+    margin: 10px 50px 10px 50px;
+}
+.container .desciption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    display: block;
+    text-align: center;
+    color: black;
+    font-family: Serif;
+    font-size: 25px;
+}
+.buy{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.buy a{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+.carts{
+    display: flex;
+    justify-content: space-around;
+}
+.cartsInItem{
+    display: block;
+}
