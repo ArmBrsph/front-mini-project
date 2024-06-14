@@ -2,7 +2,7 @@
 import axios from 'axios';
 export async function calculateBill(item) {
     const id = item.map(e => e.id)
-    const res = await axios.post(`${process.env.API_URL}/api/billProduct`, { id })
+    const res = await axios.post(`${process.env.API_URL}/shop/billProduct`, { id })
         .then((response) => {
             return response.data
         })
@@ -13,8 +13,7 @@ export async function calculateBill(item) {
 }
 
 export async function getAllProduct() {
-    "use server"
-    const res = await fetch(`${process.env.API_URL}/api/getAllProduct`)
+    const res = await fetch(`${process.env.API_URL}/shop/getAllProduct`)
     if (!res.ok) {
         throw new Error('cannot fetch Product')
     }
